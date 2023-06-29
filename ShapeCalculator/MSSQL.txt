@@ -1,0 +1,6 @@
+SELECT p.product, c.category
+FROM Products p 
+FULL OUTER JOIN ProductCategories pc 
+ON p.ProductID = pc.ProductID
+FULL LEFT JOIN Categories c 
+ON pc.CategoryID = c.CategoryID;
